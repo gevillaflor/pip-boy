@@ -1,3 +1,4 @@
+/**
 body {
     background-color:#272b23;
     background:url('../img/bgfallout.jpg') ;
@@ -7,7 +8,18 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+}*/
+
+body {
+    background:url('../img/bgfallout.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
+
 
 .imgcontainer img {
     margin: auto;

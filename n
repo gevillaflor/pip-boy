@@ -1,0 +1,108 @@
+<div class="login-container">
+        <form action="error/404.html" method="POST">
+            <div class="imgcontainer">
+                <img src="img/fallout_logo.png" alt="fallout" class="fallout">
+            </div>
+            <br/>
+            <div class = "login-form">
+                <label for="username"><span>Username</span></label><br/>
+                <input type="login" placeholder="Enter Username" name="username" id="username">
+                <br/><br/>
+                <label for="password"><span>Password</span></label><br>
+                <input type="password" placeholder="Enter Password" name="password" id="password">
+                <br/><button>Login</button><br/><br/>
+                <input type="checkbox"><span>Remember Me</span>
+            </div>   
+        </form>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+    /***/
+
+    /**
+body {
+    background-color:#272b23;
+    background:url('../img/bgfallout.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    position: relative;
+}*/
+
+body {
+    background:url('../img/bgfallout.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.imgcontainer img {
+    margin: auto;
+    margin-top: -20px;
+    width: 100%;
+    background:#65dd7b;
+}
+
+.login-container {
+    background-color: #65dd7b;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 115px;
+    margin-left: 420px;
+    padding: 53px;
+    /*width: 450px;*/
+    width: 35%;
+    opacity: .7;
+    position: absolute;
+}
+
+.login-form{
+    width: 100%;
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+/*ID*/
+#username, #password {
+    background-color:transparent;
+    color:grey;
+    border: none;
+    border-bottom: 2px solid black;
+    outline:none;
+    height:30px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#username:focus {
+    font-size:16px;
+    text-decoration: none;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#remember {
+    margin-top: -120px;
+    float: right;
+}
+

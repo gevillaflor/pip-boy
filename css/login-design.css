@@ -1,58 +1,80 @@
-/**
+/*Auto Complete Background*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-box-shadow: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 body {
-    background-color:#272b23;
     background:url('../img/bgfallout.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    height: auto;
-    position: relative;
-}*/
-
-body {
-    background:url('../img/bgfallout.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-
-
-.imgcontainer img {
-    margin: auto;
-    margin-top: -20px;
-    width: 100%;
-    background:#65dd7b;
-}
-
-.login-container {
-    background-color: #65dd7b;
-    border-radius: 8px;
-    margin: auto;
-    margin-top: 115px;
-    margin-left: 420px;
-    padding: 53px;
-    /*width: 450px;*/
-    width: 35%;
-    opacity: .7;
-    position: absolute;
-}
-
-.login-form{
-    width: 100%;
+    background-position-x: center;
 }
 
 span {
     font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
+button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+a {
+    font-weight: bold;
+    width: 100%;
+}
+
 /*ID*/
+
+#imgcontainer {
+    background-color: transparent;
+    width: 375px;
+    height: 125px;
+}
+
+#imgcontainer img {
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 48px;
+    width: 75%;
+}
+
+
+#main-container {
+    background-color: #65dd7b;
+    margin:auto;
+    margin-left: -15px;
+    border-radius: 8px;
+    opacity: .7;
+    width: 375px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
 #username, #password {
     background-color:transparent;
-    color:grey;
+    background: none;
+    color:black;
     border: none;
     border-bottom: 2px solid black;
     outline:none;
@@ -61,21 +83,34 @@ span {
     width: 100%;
 }
 
-
-#username:focus {
-    font-size:16px;
-    text-decoration: none;
-}
-
-button {
-    margin-top: 10px;
+#login {
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
 }
 
-#remember {
-    margin-top: -120px;
-    float: right;
+#text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: small;
 }
+
+/*Class*/
+
+.space {
+    background-color: transparent;
+    margin:auto;
+    width: 375px;
+    height: 30px;
+    font-size: small;
+    text-align: center;
+}
+
+.login-container {
+    background-color: transparent;
+    width: 300px;
+    margin: auto;
+    margin-top: -20px;
+}
+

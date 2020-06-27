@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,31 @@
     <link rel="icon" href="img/favicon.png" type=image/x-con>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/login-design.css">
-  
+
 </head>
+
 <body>
 
-    <div class="login-container">
-        <form action="error/404.html" method="POST">
-            <div class="imgcontainer">
-                <img src="img/fallout_logo.png" alt="fallout" class="fallout">
-            </div>
-            <br/>
-            <div class = "login-form">
-                <label for="username"><span>Username</span></label><br/>
+    <div id="main-container">
+        <div id="imgcontainer">
+            <img src="img/fallout_logo.png" alt="fallout" class="fallout">
+        </div>
+        <div class="space"></div>
+            <div class="login-container">
+                <label for="username"><span>Username</span></label><br />
                 <input type="login" placeholder="Enter Username" name="username" id="username">
-                <br/><br/>
                 <label for="password"><span>Password</span></label><br>
                 <input type="password" placeholder="Enter Password" name="password" id="password">
-                <br/><button>Login</button><br/><br/>
-                <input type="checkbox"><span>Remember Me</span>
-            </div>   
-        </form>
+                <button>Login</button>
+                <input type="checkbox"><span>Remember me</span>
+                <div id="text">
+                    Don't have an account? <a href="#">Create an account</a>
+                </div>
+            </div>
+        <div class="space"></div>
     </div>
+
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
